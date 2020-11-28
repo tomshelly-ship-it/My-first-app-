@@ -1,0 +1,45 @@
+.display-2 {
+  margin-top: 60px;
+  text-align: center;
+  color: #000000;
+}
+
+.display-4 {
+  margin-top: 30px;
+  color: coral;
+}
+
+.display-3 {
+  margin-top: 30px;
+  color: #000000;
+}
+
+.form-control {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-top: 40px;
+}
+
+.btn-primary {
+  margin-top: 40px;
+}
+
+.border-danger {
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+}
+
+p {
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  font-size: x-large;
+}
