@@ -46,5 +46,9 @@ footer {
 }
 
 .measures {
+  font-size: 25px;
+}
+
+.unit {
   font-size: 18px;
 }

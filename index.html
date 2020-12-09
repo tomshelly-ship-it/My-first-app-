@@ -21,7 +21,10 @@
           It's going to be a bright ☀️ sun shiny day <br />
           in Tel Aviv
         </p>
+                                    <img src="sun.png" alt="..." />
+
         <h1 class="display-2">What's the weather like today?</h1>
+
         <form id="city-form">
           <div class="form-row">
             <div class="col-auto offset-md-2">
@@ -40,14 +43,20 @@
             </div>
           </div>
         </form>
-        <div class="col-6">
-          <h1 id="cel" class="display-3">30℃</h1>
-        </div>
-        <div class="col-6">
-          <ul>
-            <li>Precipitation: 19%</li>
-            <li>Wind speed</li>
-          </ul>
+
+        <div class="row">
+          <div class="col-3">
+            <h1 id="cel" class="display-3">30℃</h1>
+          </div>
+          <div class="col-3">
+          </br> </br>
+            <p id="cel" class="unit"> Switch to Fahr 🙏🏼 </p>
+          </div>
+          <div id="measures" class="col-6">
+          </br> </br>
+            <strong id="prec"> Precipitation: 19% </strong> <br />
+            <strong id="speed"> speed: 5km/h </strong>
+          </div>
         </div>
         <h2 class="display-5">And how about the rest of the week?</h2>
         <div class="container-fluid mb-4">

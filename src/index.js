@@ -19,7 +19,9 @@ function city(event) {
   event.preventDefault();
   let fillCity = document.querySelector("#inlineFormInput");
   let changeCity = document.querySelector(".display-2");
-  changeCity.innerHTML = `The weather in ${fillCity.value} is...`;
+  let description = document.querySelector(".display-2");
+  changeCity.innerHTML = `It's going to be ${description.value} in ${fillCity.value}`;
+  description.innerHTML = response.data.weather[0].description;
   let apiKey = "a4a59d6f5e1d126fd66ccd575a9311a3";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${fillCity.value}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemp);
