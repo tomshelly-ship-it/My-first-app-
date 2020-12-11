@@ -1,5 +1,5 @@
 function showTemp(response) {
-  let temperature = `${Math.round(response.data.main.temp)}`;
+  temperature = `${Math.round(response.data.main.temp)}`;
   let tempNow = document.querySelector("#cel");
   tempNow.innerHTML = ` its ${temperature}℃`;
   let changeCity = document.querySelector(".display-2");
@@ -44,6 +44,8 @@ function fahrTemp(event) {
   let fahrenheit = Math.round(temperature * (9 / 5) + 32);
   document.querySelector("#cel").innerHTML = `${fahrenheit}°F`;
 }
+
+let temperature = null;
 
 let fahrenheitButton = document.querySelector(`.fahrenheit`);
 fahrenheitButton.addEventListener("click", fahrTemp);

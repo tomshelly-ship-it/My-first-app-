@@ -1,18 +1,30 @@
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .display-2 {
-  margin-top: 60px;
+  margin-top: 20px;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
 
 .display-4 {
+  font-size: 16px;
+}
+
+.description {
   margin-top: 30px;
-  color: coral;
+  color: #ffffff;
   font-size: 16px;
 }
 
 .display-3 {
   margin-top: 30px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .form-control {
@@ -30,8 +42,18 @@
   text-align: center;
 }
 
+.row {
+  color: #000000;
+}
+
+.card.img {
+  font-weight: 800px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-block: 0px;
+}
 img {
-  width: 200px;
+  width: 100px;
+  margin-top: 20px;
 }
 
 p {
@@ -51,4 +73,71 @@ footer {
 
 .unit {
   font-size: 18px;
+}
+
+.container {
+  background-size: cover;
+  transition: all 3s ease-in-out;
+  backdrop-filter: blur(10px);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+#prec {
+  color: #ffffff;
+}
+
+#speed {
+  color: #ffffff;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #f41ebf;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.fahrenheit {
+  display: inline-block;
+  background-color: #c9eeea;
+  padding: 15px;
+  border: none;
+  color: #f41ebf;
+  text-align: center;
+  font-size: 16px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
 }
