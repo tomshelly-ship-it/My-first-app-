@@ -46,14 +46,20 @@
   color: #000000;
 }
 
-.card.img {
+.card {
   font-weight: 800px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-block: 0px;
 }
-img {
+#icon {
   width: 100px;
   margin-top: 20px;
+}
+
+img {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
